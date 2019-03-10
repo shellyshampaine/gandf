@@ -340,10 +340,10 @@ def shoot_l():
     if (b_x > 0) and (s is False):
         b_x -= 30
         if (b_x >= f_x) and b_x <= f_x + f_w:
-            is_shoot = False
             if (b_y > f_y) and b_y < f_y + f_h:
                 f_hp -= 1
                 s = True
+            is_shoot = False
         if f_hp < 1:
             f_hp = 1
     else:
@@ -355,5 +355,3 @@ def shoot_l():
 
 
 running()
-
-
