@@ -490,5 +490,46 @@ class Friend:
     f_clr = [(2, 150, 224), (3, 133, 183), (3, 110, 150), (0, 93, 124), (0, 78, 102),
              (0, 60, 76), (0, 48, 58), (0, 35, 38), (0, 15, 22), (0, 0, 0)]
 
+class Text:
+    end_game = False
+    falling_f = True
+    falling_g = False
+    words = False
+    reply = False
+    reply1 = False
+    words1 = False
+    words2 = False
+    
+    font = pygame.font.Font(None, 50)
+    text = font.render("WASTED", 1, (255, 100, 100))
+    text_x = width // 2 - text.get_width() // 2
+    text_y = height // 2 - text.get_height() // 2
+    
+    font1 = pygame.font.Font(None, 50)
+    text1 = font.render("GAMER IS OUT OF BULLETS", 1, (100, 255, 100))
+    text1_x = width // 2 - text1.get_width() // 2
+    text1_y = height // 2 - text1.get_height() // 2
+    
+    pygame.font.init()
+    myfont = pygame.font.SysFont('Comic Sans MS', 20)
+    textsurface = myfont.render('Why are you holding the gun, dude?', False, (0, 0, 0))
+    
+    pygame.font.init()
+    myfont1 = pygame.font.SysFont('Comic Sans MS', 20)
+    call = myfont1.render('I am so dissapointed', False, (0, 0, 0))
+    
+    pygame.font.init()
+    myfont1 = pygame.font.SysFont('Comic Sans MS', 20)
+    call1 = myfont1.render('I thought we were friends', False, (0, 0, 0))
+    
+    pygame.font.init()
+    myfont1 = pygame.font.SysFont('Comic Sans MS', 20)
+    call2 = myfont1.render('But what happened?', False, (0, 0, 0))
+    
+    pygame.font.init()
+    myfont1 = pygame.font.SysFont('Comic Sans MS', 20)
+    call3 = myfont1.render('Nothing. I just need to kill you.', False, (0, 0, 0))
+    
+
 
 running()
